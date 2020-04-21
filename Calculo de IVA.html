@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cálculo de IVA</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function calcularIVA(monto) {
+			
+		var iva = 16;
+		var ivaInicial = monto * iva/100;
+		var ivaFinal = parseInt(monto) + parseInt(ivaInicial); 
+			
+		document.write("El precio total con iva es: " + ivaFinal);
+
+	}
+		var Total = prompt("Ingrese el monto:");
+		calcularIVA(Total);
+
+	</script>
+</body>
+</html>
